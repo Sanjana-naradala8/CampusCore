@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home | CampusCore Institute of Technology &amp; Sciences</title>
-<meta name="description" content="CampusCore Institute of Technology &amp; Sciences, Hyderabad. Empowering Minds. Engineering Futures.">
+<title>Contact | CampusCore Institute of Technology &amp; Sciences</title>
+<meta name="description" content="Contact CampusCore Institute of Technology &amp; Sciences, Hyderabad.">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span></label>
     <nav class="nav">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="departments.html">Departments</a>
       <a href="admissions.html">Admissions</a>
@@ -27,68 +27,54 @@
       <a href="placements.html">Placements</a>
       <a href="events.html">Events</a>
       <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container">
-    <h1>Empowering Minds. <span>Engineering Futures.</span></h1>
-    <p>CampusCore Institute of Technology &amp; Sciences (CITS) in Hyderabad prepares students for a successful career in technology and innovation.</p>
-    <div class="btns">
-      <a href="admissions.html" class="btn btn-primary">Apply Now</a>
-      <a href="departments.html" class="btn btn-outline">Explore Departments</a>
-    </div>
-  </div>
+<section class="page-banner">
+  <div class="container"><h1>Contact Us</h1><p>Home / Contact</p></div>
 </section>
 
 <section>
   <div class="container split">
-    <img src="assets/images/about-campus.jpg" alt="CITS campus aerial view">
     <div>
-      <h2>Welcome to CITS</h2>
-      <p>CampusCore Institute of Technology &amp; Sciences is a modern engineering college in Hyderabad, focused on quality education, practical learning and career readiness.</p>
-      <ul class="tick">
-        <li>Industry-oriented curriculum</li>
-        <li>Modern labs and smart classrooms</li>
-        <li>Dedicated placement support</li>
+      <h2>Get in Touch</h2>
+      <p>Have a question about admissions, courses or campus life? Our team is happy to help.</p>
+      <ul class="contact-list">
+        <li><span>📍</span><div><strong>Address</strong><br>Madhapur, HITEC City Road, Hyderabad, Telangana - 500081</div></li>
+        <li><span>📞</span><div><strong>Phone</strong><br><a href="tel:+919876543210">+91 98765 43210</a></div></li>
+        <li><span>✉️</span><div><strong>Email</strong><br><a href="mailto:admissions@campuscore-cits.edu.in">admissions@campuscore-cits.edu.in</a></div></li>
+        <li><span>🕘</span><div><strong>Office Hours</strong><br>Mon - Sat: 9:00 AM - 5:00 PM</div></li>
       </ul>
-      <br><a href="about.html" class="btn btn-navy">About Us</a>
     </div>
+    <form class="enquiry" data-form="contact" action="#" method="post">
+      <h3>Send a Message</h3>
+      <label for="c-name">Full Name</label>
+      <input type="text" id="c-name" name="name" placeholder="Your full name">
+      <label for="c-phone">Phone Number</label>
+      <input type="tel" id="c-phone" name="phone" placeholder="10-digit mobile number" maxlength="10">
+      <label for="c-email">Email</label>
+      <input type="email" id="c-email" name="email" placeholder="Your email">
+      <label for="c-reg">Regarding</label>
+      <select id="c-reg" name="regarding" required><option value="">Select a topic</option><option>Admissions</option><option>Courses &amp; Departments</option><option>Placements</option><option>Campus Visit</option><option>Other</option></select>
+      <label for="c-msg">Message</label>
+      <textarea id="c-msg" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
   </div>
 </section>
 
 <section class="bg-light">
   <div class="container">
-    <div class="section-title"><h2>Our Departments</h2><p>Seven departments to shape your future</p></div>
-    <div class="grid grid-4">
-      <a class="card" href="department.html?dept=cse"><div class="icon">💻</div><h3>Computer Science &amp; Engineering</h3><p>Programming, algorithms, software engineering and modern computing.</p><span class="more">Explore →</span></a>
-      <a class="card" href="department.html?dept=ece"><div class="icon">📡</div><h3>Electronics &amp; Communication</h3><p>Electronics, communication systems, embedded systems and VLSI.</p><span class="more">Explore →</span></a>
-      <a class="card" href="department.html?dept=eee"><div class="icon">⚡</div><h3>Electrical &amp; Electronics</h3><p>Power systems, electrical machines, control and renewable energy.</p><span class="more">Explore →</span></a>
-      <a class="card" href="department.html?dept=mech"><div class="icon">⚙️</div><h3>Mechanical Engineering</h3><p>Design, thermal engineering, manufacturing and robotics.</p><span class="more">Explore →</span></a>
-    </div>
-    <p style="text-align:center;margin-top:32px"><a href="departments.html" class="btn btn-navy">View All 7 Departments</a></p>
+    <div class="section-title"><h2>Find Us on the Map</h2><p><a class="more" style="color:var(--teal);font-weight:600" href="https://www.google.com/maps/search/?api=1&amp;query=HITEC+City+Hyderabad" target="_blank" rel="noopener">Open in Google Maps →</a></p></div>
+    <iframe class="map" title="CITS location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=HITEC+City,+Hyderabad&amp;z=14&amp;output=embed"></iframe>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <div class="section-title"><h2>Why Choose CITS?</h2><p>What makes our campus special</p></div>
-    <div class="grid grid-4">
-      <div class="card"><div class="icon">🧪</div><h3>Modern Labs</h3><p>Well-equipped labs for hands-on practice.</p></div>
-      <div class="card"><div class="icon">👩‍🏫</div><h3>Expert Faculty</h3><p>Experienced, supportive mentors.</p></div>
-      <div class="card"><div class="icon">💼</div><h3>Placement Support</h3><p>Training and drives to build careers.</p></div>
-      <div class="card"><div class="icon">🎓</div><h3>Vibrant Campus</h3><p>Events, clubs, sports and more.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="container">
-    <h2>Admissions Open 2026-27</h2>
-    <p>Begin your engineering journey with CITS today.</p>
-    <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+    <img class="wide-img" src="assets/images/contact-entrance.jpg" alt="CITS main entrance" loading="lazy">
   </div>
 </section>
 
