@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us | CampusCore Institute of Technology &amp; Sciences</title>
-<meta name="description" content="About CampusCore Institute of Technology &amp; Sciences, Hyderabad.">
+<title>Events &amp; News | CampusCore Institute of Technology &amp; Sciences</title>
+<meta name="description" content="Events and news at CampusCore Institute of Technology &amp; Sciences.">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,13 +19,13 @@
     <label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span></label>
     <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
+      <a href="about.html">About</a>
       <a href="departments.html">Departments</a>
       <a href="admissions.html">Admissions</a>
       <a href="faculty.html">Faculty</a>
       <a href="campus-life.html">Campus Life</a>
       <a href="placements.html">Placements</a>
-      <a href="events.html">Events</a>
+      <a href="events.html" class="active">Events</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -33,36 +33,38 @@
 </header>
 
 <section class="page-banner">
-  <div class="container"><h1>About Us</h1><p>Home / About</p></div>
+  <div class="container"><h1>Events &amp; News</h1><p>Home / Events</p></div>
 </section>
 
 <section>
-  <div class="container split">
-    <div>
-      <h2>Who We Are</h2>
-      <p>CampusCore Institute of Technology &amp; Sciences (CITS) is an engineering college in Hyderabad, Telangana. We combine strong academics with practical skills so that every student is ready for the industry.</p>
-      <p>Our campus offers modern classrooms, computer labs, a library and sports facilities, all designed to support learning and growth.</p>
+  <div class="container" data-filter-group>
+    <div class="section-title"><h2>Campus Events</h2><p>Learn, celebrate and grow together</p></div>
+    <div class="tools">
+      <div class="tabs">
+        <button class="tab active" data-filter="all" type="button">All</button>
+        <button class="tab" data-filter="tech" type="button">Tech</button>
+        <button class="tab" data-filter="cultural" type="button">Cultural</button>
+        <button class="tab" data-filter="workshops" type="button">Workshops</button>
+        <button class="tab" data-filter="sports" type="button">Sports</button>
+      </div>
     </div>
-    <img src="assets/images/about-campus.jpg" alt="CITS campus">
+    <div class="grid grid-4">
+      <div class="photo-card" data-cat="tech"><img src="assets/images/event-techfest.jpg" alt="Tech Fest" loading="lazy"><div><h3>Tech Fest</h3><p>Students showcase projects, robots and innovations.</p></div></div>
+      <div class="photo-card" data-cat="cultural"><img src="assets/images/event-cultural.jpg" alt="Cultural Fest" loading="lazy"><div><h3>Cultural Fest</h3><p>Dance, music and celebrations for the whole campus.</p></div></div>
+      <div class="photo-card" data-cat="workshops"><img src="assets/images/event-workshop.jpg" alt="Workshops &amp; Seminars" loading="lazy"><div><h3>Workshops &amp; Seminars</h3><p>Industry experts share skills and career insights.</p></div></div>
+      <div class="photo-card" data-cat="sports"><img src="assets/images/sports.jpg" alt="Sports Meet" loading="lazy"><div><h3>Sports Meet</h3><p>Inter-department matches and outdoor games.</p></div></div>
+    </div>
+    <p class="empty hide">No events found.</p>
   </div>
 </section>
 
 <section class="bg-light">
-  <div class="container grid grid-3">
-    <div class="card"><div class="icon">🎯</div><h3>Our Mission</h3><p>To provide quality technical education that builds skilled, responsible and innovative engineers.</p></div>
-    <div class="card"><div class="icon">🔭</div><h3>Our Vision</h3><p>To be a leading institute known for excellence in education, research and student success.</p></div>
-    <div class="card"><div class="icon">⭐</div><h3>Our Values</h3><p>Integrity, curiosity, teamwork and a commitment to lifelong learning.</p></div>
-  </div>
-</section>
-
-<section>
   <div class="container">
-    <div class="section-title"><h2>What We Offer</h2><p>Everything a student needs to grow</p></div>
-    <div class="grid grid-4">
-      <a class="card" href="campus-life.html"><div class="icon">📚</div><h3>Library</h3><p>Books, journals and quiet study spaces.</p></a>
-      <a class="card" href="campus-life.html"><div class="icon">💻</div><h3>Computer Labs</h3><p>Latest systems for coding and projects.</p></a>
-      <a class="card" href="campus-life.html"><div class="icon">🏏</div><h3>Sports</h3><p>Grounds for cricket, football and more.</p></a>
-      <a class="card" href="events.html"><div class="icon">🎤</div><h3>Events</h3><p>Tech fests, cultural days and workshops.</p></a>
+    <div class="section-title"><h2>Latest Updates</h2><p>Stay informed about life at CITS</p></div>
+    <div class="grid grid-3">
+      <a class="card" href="admissions.html"><div class="icon">📢</div><h3>Admissions Open</h3><p>Applications are open for the new academic year.</p><span class="more">Apply now →</span></a>
+      <div class="card"><div class="icon">🏆</div><h3>Student Achievements</h3><p>Celebrating our students' success in competitions.</p></div>
+      <div class="card"><div class="icon">🤝</div><h3>Industry Interaction</h3><p>Guest lectures and visits from industry experts.</p></div>
     </div>
   </div>
 </section>

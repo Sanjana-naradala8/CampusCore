@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin | CampusCore Institute of Technology &amp; Sciences</title>
+<meta name="description" content="Saved applications and messages.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand"><img src="assets/images/logo.png" alt="CampusCore Institute of Technology &amp; Sciences"></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span></label>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="departments.html">Departments</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="campus-life.html">Campus Life</a>
+      <a href="placements.html">Placements</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+.tbl{overflow-x:auto;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:34px}
+.tbl table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:760px}
+.tbl th,.tbl td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);color:var(--text)}
+.tbl th{background:var(--bg);font-family:'Poppins',sans-serif;color:var(--heading)}
+.tbl select{padding:6px;border-radius:8px;border:1px solid var(--line);background:var(--page);color:var(--text)}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+</style>
+<section class="page-banner">
+  <div class="container"><h1>Admin Panel</h1><p>Saved applications and messages (demo)</p></div>
+</section>
+<section>
+  <div class="container">
+    <div id="gate" style="max-width:380px;margin:auto">
+      <form id="gate-form" class="enquiry">
+        <h3>Admin Login</h3>
+        <label for="pass">Passcode</label>
+        <input type="password" id="pass" required>
+        <button type="submit" class="btn btn-navy">Unlock</button>
+      </form>
+    </div>
+    <div id="panel" class="hide">
+      <p style="color:var(--muted)">Data is stored in this browser (localStorage). Applications: <strong id="c-adm">0</strong> | Messages: <strong id="c-msg">0</strong></p>
+      <div class="bar">
+        <button id="dl-adm" class="btn btn-navy" type="button">Download Applications (CSV)</button>
+        <button id="dl-msg" class="btn btn-navy" type="button">Download Messages (CSV)</button>
+        <button id="clear" class="btn btn-outline" style="border-color:#e5484d;color:#e5484d" type="button">Clear All</button>
+      </div>
+      <h2 style="margin:26px 0 12px">Admission Applications</h2>
+      <div class="tbl"><table id="t-adm"><thead><tr><th>ID</th><th>Name</th><th>Phone</th><th>Email</th><th>Branch</th><th>Date</th><th>Status</th><th></th></tr></thead><tbody></tbody></table></div>
+      <h2 style="margin:26px 0 12px">Contact Messages</h2>
+      <div class="tbl"><table id="t-msg"><thead><tr><th>Name</th><th>Phone</th><th>Email</th><th>Regarding</th><th>Message</th><th>Date</th><th></th></tr></thead><tbody></tbody></table></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="assets/images/logo-white.png" alt="CampusCore logo">
+      <p>Empowering Minds. Engineering Futures.</p>
+      <div class="social">
+        <a href="tel:+919876543210" aria-label="Call us">📞</a><a href="mailto:admissions@campuscore-cits.edu.in" aria-label="Email us">✉️</a><a href="https://www.google.com/maps/search/?api=1&amp;query=HITEC+City+Hyderabad" target="_blank" rel="noopener" aria-label="Open in Google Maps">📍</a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="placements.html">Placements</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Departments</h4>
+      <ul><li><a href="department.html?dept=cse">Computer Science &amp; Engineering</a></li><li><a href="department.html?dept=ece">Electronics &amp; Communication</a></li><li><a href="department.html?dept=eee">Electrical &amp; Electronics</a></li><li><a href="department.html?dept=mech">Mechanical Engineering</a></li><li><a href="department.html?dept=civil">Civil Engineering</a></li><li><a href="department.html?dept=aiml">AI &amp; Machine Learning</a></li><li><a href="department.html?dept=aids">AI &amp; Data Science</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <ul>
+        <li>📍 Madhapur, HITEC City Road, Hyderabad, Telangana - 500081</li>
+        <li>📞 +91 98765 43210</li>
+        <li>✉️ admissions@campuscore-cits.edu.in</li>
+        <li>🕘 Mon - Sat: 9:00 AM - 5:00 PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container copy">
+    <span>© 2026 CampusCore Institute of Technology &amp; Sciences (CITS). All rights reserved.</span>
+    <span><a href="admin.html">Admin</a></span>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>
+(function () {
+  var PASS = 'admin123'; // demo passcode - change it
+  var gate = document.getElementById('gate'), panel = document.getElementById('panel');
+  function unlock() { gate.classList.add('hide'); panel.classList.remove('hide'); render(); }
+  if (sessionStorage.getItem('cits_admin') === '1') unlock();
+  document.getElementById('gate-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (document.getElementById('pass').value === PASS) { sessionStorage.setItem('cits_admin', '1'); unlock(); }
+    else CITS.showModal('Wrong passcode', 'Please try again.', '!');
+  });
+  function get(k) { try { return JSON.parse(localStorage.getItem(k) || '[]'); } catch (e) { return []; } }
+  function set(k, v) { localStorage.setItem(k, JSON.stringify(v)); }
+  function cell(tr, text) { var td = document.createElement('td'); td.textContent = text || '-'; tr.appendChild(td); return td; }
+  function render() {
+    var adm = get('cits_admissions'), msg = get('cits_messages');
+    document.getElementById('c-adm').textContent = adm.length;
+    document.getElementById('c-msg').textContent = msg.length;
+    var ta = document.querySelector('#t-adm tbody'); ta.innerHTML = '';
+    adm.forEach(function (a, i) {
+      var tr = document.createElement('tr');
+      ['id', 'name', 'phone', 'email', 'branch', 'date'].forEach(function (k) { cell(tr, a[k]); });
+      var td = document.createElement('td'), sel = document.createElement('select');
+      ['Received', 'Under Review', 'Accepted', 'Rejected'].forEach(function (s) { var o = document.createElement('option'); o.textContent = s; if (s === a.status) o.selected = true; sel.appendChild(o); });
+      sel.addEventListener('change', function () { adm[i].status = sel.value; set('cits_admissions', adm); });
+      td.appendChild(sel); tr.appendChild(td);
+      tr.appendChild(del('cits_admissions', adm, i));
+      ta.appendChild(tr);
+    });
+    var tm = document.querySelector('#t-msg tbody'); tm.innerHTML = '';
+    msg.forEach(function (m, i) {
+      var tr = document.createElement('tr');
+      ['name', 'phone', 'email', 'regarding', 'message', 'date'].forEach(function (k) { cell(tr, m[k]); });
+      tr.appendChild(del('cits_messages', msg, i));
+      tm.appendChild(tr);
+    });
+  }
+  function del(key, list, i) {
+    var td = document.createElement('td'), b = document.createElement('button');
+    b.className = 'tab'; b.textContent = 'Delete'; b.type = 'button';
+    b.addEventListener('click', function () { list.splice(i, 1); set(key, list); render(); });
+    td.appendChild(b); return td;
+  }
+  function csv(key, cols) {
+    var rows = [cols.join(',')].concat(get(key).map(function (r) { return cols.map(function (c) { return '"' + String(r[c] || '').replace(/"/g, '""') + '"'; }).join(','); }));
+    var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([rows.join('\n')], { type: 'text/csv' })); a.download = key + '.csv'; a.click();
+  }
+  document.getElementById('dl-adm').addEventListener('click', function () { csv('cits_admissions', ['id', 'name', 'phone', 'email', 'branch', 'status', 'date']); });
+  document.getElementById('dl-msg').addEventListener('click', function () { csv('cits_messages', ['name', 'phone', 'email', 'regarding', 'message', 'date']); });
+  document.getElementById('clear').addEventListener('click', function () {
+    if (confirm('Delete ALL saved applications and messages from this browser?')) { localStorage.removeItem('cits_admissions'); localStorage.removeItem('cits_messages'); render(); }
+  });
+})();
+</script>
+</body>
+</html>

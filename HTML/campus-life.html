@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us | CampusCore Institute of Technology &amp; Sciences</title>
-<meta name="description" content="About CampusCore Institute of Technology &amp; Sciences, Hyderabad.">
+<title>Campus Life | CampusCore Institute of Technology &amp; Sciences</title>
+<meta name="description" content="Facilities, sports and student clubs at CampusCore Institute of Technology &amp; Sciences.">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +19,11 @@
     <label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span></label>
     <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
+      <a href="about.html">About</a>
       <a href="departments.html">Departments</a>
       <a href="admissions.html">Admissions</a>
       <a href="faculty.html">Faculty</a>
-      <a href="campus-life.html">Campus Life</a>
+      <a href="campus-life.html" class="active">Campus Life</a>
       <a href="placements.html">Placements</a>
       <a href="events.html">Events</a>
       <a href="gallery.html">Gallery</a>
@@ -33,37 +33,32 @@
 </header>
 
 <section class="page-banner">
-  <div class="container"><h1>About Us</h1><p>Home / About</p></div>
+  <div class="container"><h1>Campus Life</h1><p>Home / Campus Life</p></div>
 </section>
 
 <section>
-  <div class="container split">
-    <div>
-      <h2>Who We Are</h2>
-      <p>CampusCore Institute of Technology &amp; Sciences (CITS) is an engineering college in Hyderabad, Telangana. We combine strong academics with practical skills so that every student is ready for the industry.</p>
-      <p>Our campus offers modern classrooms, computer labs, a library and sports facilities, all designed to support learning and growth.</p>
+  <div class="container" data-filter-group>
+    <div class="section-title"><h2>Life at CITS</h2><p>Facilities and activities beyond the classroom</p></div>
+    <div class="tools">
+      <div class="tabs">
+        <button class="tab active" data-filter="all" type="button">All</button>
+        <button class="tab" data-filter="academics" type="button">Academics</button>
+        <button class="tab" data-filter="sports" type="button">Sports</button>
+        <button class="tab" data-filter="clubs" type="button">Clubs</button>
+      </div>
+      <input class="search" type="search" placeholder="Search...">
     </div>
-    <img src="assets/images/about-campus.jpg" alt="CITS campus">
-  </div>
-</section>
-
-<section class="bg-light">
-  <div class="container grid grid-3">
-    <div class="card"><div class="icon">🎯</div><h3>Our Mission</h3><p>To provide quality technical education that builds skilled, responsible and innovative engineers.</p></div>
-    <div class="card"><div class="icon">🔭</div><h3>Our Vision</h3><p>To be a leading institute known for excellence in education, research and student success.</p></div>
-    <div class="card"><div class="icon">⭐</div><h3>Our Values</h3><p>Integrity, curiosity, teamwork and a commitment to lifelong learning.</p></div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-title"><h2>What We Offer</h2><p>Everything a student needs to grow</p></div>
     <div class="grid grid-4">
-      <a class="card" href="campus-life.html"><div class="icon">📚</div><h3>Library</h3><p>Books, journals and quiet study spaces.</p></a>
-      <a class="card" href="campus-life.html"><div class="icon">💻</div><h3>Computer Labs</h3><p>Latest systems for coding and projects.</p></a>
-      <a class="card" href="campus-life.html"><div class="icon">🏏</div><h3>Sports</h3><p>Grounds for cricket, football and more.</p></a>
-      <a class="card" href="events.html"><div class="icon">🎤</div><h3>Events</h3><p>Tech fests, cultural days and workshops.</p></a>
+      <div class="photo-card" data-cat="academics"><img src="assets/images/library.jpg" alt="Library" loading="lazy"><div><h3>Library</h3><p>Books, journals and quiet reading spaces.</p></div></div>
+      <div class="photo-card" data-cat="academics"><img src="assets/images/lab.jpg" alt="Computer Labs" loading="lazy"><div><h3>Computer Labs</h3><p>Modern systems for coding and projects.</p></div></div>
+      <div class="photo-card" data-cat="academics"><img src="assets/images/classroom.jpg" alt="Smart Classrooms" loading="lazy"><div><h3>Smart Classrooms</h3><p>Digital boards and comfortable seating.</p></div></div>
+      <div class="photo-card" data-cat="sports"><img src="assets/images/sports.jpg" alt="Sports Ground" loading="lazy"><div><h3>Sports Ground</h3><p>Football, cricket and outdoor games.</p></div></div>
+      <div class="card" data-cat="clubs"><div class="icon">💻</div><h3>Coding Club</h3><p>Hackathons and coding practice.</p></div>
+      <div class="card" data-cat="clubs"><div class="icon">🤖</div><h3>Robotics Club</h3><p>Build and test robots.</p></div>
+      <div class="card" data-cat="clubs"><div class="icon">🎭</div><h3>Cultural Club</h3><p>Dance, music and drama.</p></div>
+      <div class="card" data-cat="sports clubs"><div class="icon">🏅</div><h3>Sports Club</h3><p>Teams and tournaments.</p></div>
     </div>
+    <p class="empty hide">Nothing found.</p>
   </div>
 </section>
 
